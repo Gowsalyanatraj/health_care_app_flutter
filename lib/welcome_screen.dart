@@ -45,14 +45,38 @@ class WelcomeScreen extends StatelessWidget {
                     wordSpacing: 2),
               ),
               SizedBox(height: 10),
-              Text('Appoint Your Doctor',
-              style: TextStyle(
-                color: Colors.black54,
-                fontSize: 18,
-                fontWeight: FontWeight.w500,
-                letterSpacing: 1,
-                wordSpacing: 2
+              Text(
+                'Appoint Your Doctor',
+                style: TextStyle(
+                  color: Colors.black54,
+                  fontSize: 18,
+                  fontWeight: FontWeight.w500,
+                  letterSpacing: 1,
+                ),
               ),
+              SizedBox(
+                height: 10,
+              ),
+              Row(
+                mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                children: [
+                  Material(
+                    color: Color(0xFF7165D6),
+                    borderRadius: BorderRadius.circular(10),
+                    child: InkWell(
+                      onTap: () {},
+                      child: Padding(
+                        padding: const EdgeInsets.symmetric(
+                            vertical: 15, horizontal: 40),
+                        child: Text(
+                          'Login',
+                          style: TextStyle(
+                              color: Colors.white, fontWeight: FontWeight.bold),
+                        ),
+                      ),
+                    ),
+                  )
+                ],
               )
             ],
           ),
