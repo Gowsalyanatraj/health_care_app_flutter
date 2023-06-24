@@ -49,7 +49,8 @@ class _LoginScreenState extends State<LoginScreen> {
                             ? Icon(CupertinoIcons.eye_slash_fill)
                             : Icon(CupertinoIcons.eye_fill))),
               ),
-            )
+            ),
+            TextButton(onPressed: (){}, child: Text('Log In'))
           ],
         )),
       ),
