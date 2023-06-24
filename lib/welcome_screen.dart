@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 
+import 'login_screen.dart';
+
 class WelcomeScreen extends StatelessWidget {
   const WelcomeScreen({super.key});
 
@@ -64,7 +66,10 @@ class WelcomeScreen extends StatelessWidget {
                     color: Color(0xFF7165D6),
                     borderRadius: BorderRadius.circular(10),
                     child: InkWell(
-                      onTap: () {},
+                      onTap: () {
+                         Navigator.push(context, MaterialPageRoute(builder: (context) => const LoginScreen(),
+                         ));
+                      },
                       child: Padding(
                         padding: const EdgeInsets.symmetric(
                             vertical: 15, horizontal: 40),
@@ -75,7 +80,23 @@ class WelcomeScreen extends StatelessWidget {
                         ),
                       ),
                     ),
-                  )
+                  ),
+                    Material(
+                    color: Color(0xFF7165D6),
+                    borderRadius: BorderRadius.circular(10),
+                    child: InkWell(
+                      onTap: () {},
+                      child: Padding(
+                        padding: const EdgeInsets.symmetric(
+                            vertical: 15, horizontal: 40),
+                        child: Text(
+                          'Sign Up',
+                          style: TextStyle(
+                              color: Colors.white, fontWeight: FontWeight.bold),
+                        ),
+                      ),
+                    ),
+                  ),
                 ],
               )
             ],
