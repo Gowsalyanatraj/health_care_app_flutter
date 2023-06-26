@@ -40,17 +40,47 @@ class _LoginScreenState extends State<LoginScreen> {
               child: TextField(
                 obscureText: passToggle ? true : false,
                 decoration: InputDecoration(
-                    border: OutlineInputBorder(),
-                    label: Text("Enter User Password"),
-                    prefixIcon: Icon(Icons.person),
+                    border: const OutlineInputBorder(),
+                    label: const Text("Enter User Password"),
+                    prefixIcon: const Icon(Icons.lock),
                     suffixIcon: InkWell(
-                        onTap: () {},
+                        onTap: () {
+                          if (passToggle == true) {
+                            passToggle == false;
+                          } else {
+                            passToggle == true;
+                          }
+                          setState(() {});
+                        },
                         child: passToggle
-                            ? Icon(CupertinoIcons.eye_slash_fill)
-                            : Icon(CupertinoIcons.eye_fill))),
+                            ? const Icon(CupertinoIcons.eye_slash_fill)
+                            : const Icon(CupertinoIcons.eye_fill))),
               ),
             ),
-            TextButton(onPressed: (){}, child: Text('Log In'))
+            const SizedBox(height: 10),
+            SizedBox(width: double.infinity),
+            Material(
+              color: Color(0xFF7165D6),
+              borderRadius: BorderRadius.circular(10),
+              child: InkWell(
+                onTap: () {
+                  // Navigator.push(
+                  //     context,
+                  //     MaterialPageRoute(
+                  //       builder: (context) => const LoginScreen(),
+                  //     ));
+                },
+                child: Padding(
+                  padding:
+                      const EdgeInsets.symmetric(vertical: 15, horizontal: 40),
+                  child: Text(
+                    'Login',
+                    style: TextStyle(
+                        color: Colors.white, fontWeight: FontWeight.bold),
+                  ),
+                ),
+              ),
+            ),
           ],
         )),
       ),
