@@ -57,26 +57,35 @@ class _LoginScreenState extends State<LoginScreen> {
                             : const Icon(CupertinoIcons.eye_fill))),
               ),
             ),
-            const SizedBox(height: 10),
-            SizedBox(width: double.infinity),
-            Material(
-              color: Color(0xFF7165D6),
-              borderRadius: BorderRadius.circular(10),
-              child: InkWell(
-                onTap: () {
-                  // Navigator.push(
-                  //     context,
-                  //     MaterialPageRoute(
-                  //       builder: (context) => const LoginScreen(),
-                  //     ));
-                },
-                child: Padding(
-                  padding:
-                      const EdgeInsets.symmetric(vertical: 15, horizontal: 40),
-                  child: Text(
-                    'Login',
-                    style: TextStyle(
-                        color: Colors.white, fontWeight: FontWeight.bold),
+            SizedBox(height: 10),
+            Padding(
+              padding: const EdgeInsets.all(8.0),
+              child: SizedBox(
+                width: double.infinity,
+                child: Material(
+                  color: Color(0xFF7165D6),
+                  borderRadius: BorderRadius.circular(10),
+                  child: InkWell(
+                    onTap: () {
+                      // Navigator.push(
+                      //     context,
+                      //     MaterialPageRoute(
+                      //       builder: (context) => const LoginScreen(),
+                      //     ));
+                    },
+                    child: Padding(
+                      padding: const EdgeInsets.symmetric(
+                          vertical: 15, horizontal: 40),
+                      child: Center(
+                        child: Text(
+                          'Login',
+                          style: TextStyle(
+                              color: Colors.white,
+                              fontSize: 22,
+                              fontWeight: FontWeight.bold),
+                        ),
+                      ),
+                    ),
                   ),
                 ),
               ),
