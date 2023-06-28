@@ -18,12 +18,12 @@ class _LoginScreenState extends State<LoginScreen> {
         child: SafeArea(
             child: Column(
           children: [
-            SizedBox(height: 10),
+            const SizedBox(height: 10),
             Padding(
               padding: const EdgeInsets.all(20.0),
               child: Image.asset('assets/health1.png'),
             ),
-            SizedBox(height: 10),
+            const SizedBox(height: 10),
             const Padding(
               padding: EdgeInsets.all(10.0),
               child: TextField(
@@ -34,7 +34,7 @@ class _LoginScreenState extends State<LoginScreen> {
                 ),
               ),
             ),
-            SizedBox(height: 10),
+            const SizedBox(height: 10),
             Padding(
               padding: const EdgeInsets.all(10.0),
               child: TextField(
@@ -57,13 +57,13 @@ class _LoginScreenState extends State<LoginScreen> {
                             : const Icon(CupertinoIcons.eye_fill))),
               ),
             ),
-            SizedBox(height: 10),
+            const SizedBox(height: 10),
             Padding(
               padding: const EdgeInsets.all(8.0),
               child: SizedBox(
                 width: double.infinity,
                 child: Material(
-                  color: Color(0xFF7165D6),
+                  color: const Color(0xFF7165D6),
                   borderRadius: BorderRadius.circular(10),
                   child: InkWell(
                     onTap: () {
@@ -73,9 +73,9 @@ class _LoginScreenState extends State<LoginScreen> {
                       //       builder: (context) => const LoginScreen(),
                       //     ));
                     },
-                    child: Padding(
-                      padding: const EdgeInsets.symmetric(
-                          vertical: 15, horizontal: 40),
+                    child: const Padding(
+                      padding:
+                          EdgeInsets.symmetric(vertical: 15, horizontal: 40),
                       child: Center(
                         child: Text(
                           'Login',
@@ -90,6 +90,36 @@ class _LoginScreenState extends State<LoginScreen> {
                 ),
               ),
             ),
+            SizedBox(
+              height: 10.0,
+            ),
+            Row(
+              mainAxisAlignment: MainAxisAlignment.center,
+              children: [
+                Text(
+                  "Dont't have any account?",
+                  style: TextStyle(
+                      fontSize: 16,
+                      fontWeight: FontWeight.w500,
+                      color: Colors.black54),
+                ),
+                TextButton(
+                    onPressed: () {
+                      // Navigator.push(
+                      //     context,
+                      //     MaterialPageRoute(
+                      //       builder: (context) => const SignUpScreen(),
+                      //     ));
+                    },
+                    child: Text(
+                      "Create Account",
+                      style: TextStyle(
+                        fontWeight: FontWeight.bold,
+                        color: const Color(0xFF7165D6),
+                      ),
+                    ))
+              ],
+            )
           ],
         )),
       ),
