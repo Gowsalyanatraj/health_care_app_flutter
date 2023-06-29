@@ -1,6 +1,8 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
+import 'signup_screen.dart';
+
 class LoginScreen extends StatefulWidget {
   const LoginScreen({super.key});
 
@@ -90,13 +92,13 @@ class _LoginScreenState extends State<LoginScreen> {
                 ),
               ),
             ),
-            SizedBox(
+            const SizedBox(
               height: 10.0,
             ),
             Row(
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
-                Text(
+                const Text(
                   "Dont't have any account?",
                   style: TextStyle(
                       fontSize: 16,
@@ -105,17 +107,17 @@ class _LoginScreenState extends State<LoginScreen> {
                 ),
                 TextButton(
                     onPressed: () {
-                      // Navigator.push(
-                      //     context,
-                      //     MaterialPageRoute(
-                      //       builder: (context) => const SignUpScreen(),
-                      //     ));
+                      Navigator.push(
+                          context,
+                          MaterialPageRoute(
+                            builder: (context) => const SignUpScreen(),
+                          ));
                     },
-                    child: Text(
+                    child: const Text(
                       "Create Account",
                       style: TextStyle(
                         fontWeight: FontWeight.bold,
-                        color: const Color(0xFF7165D6),
+                        color: Color(0xFF7165D6),
                       ),
                     ))
               ],
