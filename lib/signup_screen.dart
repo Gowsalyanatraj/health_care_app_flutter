@@ -60,7 +60,7 @@ class _SignUpScreenState extends State<SignUpScreen> {
                     prefixIcon: Icon(Icons.call)),
               ),
             ),
-             Padding(
+            Padding(
               padding: const EdgeInsets.all(8.0),
               child: SizedBox(
                 width: double.infinity,
@@ -69,11 +69,12 @@ class _SignUpScreenState extends State<SignUpScreen> {
                   borderRadius: BorderRadius.circular(10),
                   child: InkWell(
                     onTap: () {
-                      // Navigator.push(
-                      //     context,
-                      //     MaterialPageRoute(
-                      //       builder: (context) => const LoginScreen(),
-                      //     ));
+                      if (passToggle == true) {
+                        passToggle = true;
+                      } else {
+                        passToggle = true;
+                      }
+                      setState(() {});
                     },
                     child: const Padding(
                       padding:
