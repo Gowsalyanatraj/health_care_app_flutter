@@ -19,9 +19,9 @@ class _SignUpScreenState extends State<SignUpScreen> {
           children: [
             const SizedBox(height: 10.0),
             Image.asset("assets/health1.png"),
-            Column(
+            const Column(
               children: [
-                const Padding(
+                Padding(
                   padding:
                       EdgeInsets.symmetric(horizontal: 15.0, vertical: 8.0),
                   child: TextField(
@@ -42,6 +42,7 @@ class _SignUpScreenState extends State<SignUpScreen> {
                     prefixIcon: Icon(Icons.email)),
               ),
             ),
+            //Data fields
             const Padding(
               padding: EdgeInsets.symmetric(horizontal: 15.0, vertical: 8.0),
               child: TextField(
@@ -51,6 +52,7 @@ class _SignUpScreenState extends State<SignUpScreen> {
                     prefixIcon: Icon(Icons.lock)),
               ),
             ),
+             //Data fields
             const Padding(
               padding: EdgeInsets.symmetric(horizontal: 15.0, vertical: 8.0),
               child: TextField(
@@ -60,6 +62,7 @@ class _SignUpScreenState extends State<SignUpScreen> {
                     prefixIcon: Icon(Icons.call)),
               ),
             ),
+             //Data fields
             Padding(
               padding: const EdgeInsets.all(8.0),
               child: SizedBox(
@@ -76,6 +79,7 @@ class _SignUpScreenState extends State<SignUpScreen> {
                       }
                       setState(() {});
                     },
+                  //button
                     child: const Padding(
                       padding:
                           EdgeInsets.symmetric(vertical: 15, horizontal: 40),
