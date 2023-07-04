@@ -43,16 +43,29 @@ class _SignUpScreenState extends State<SignUpScreen> {
               ),
             ),
             //Data fields
-            const Padding(
+            Padding(
               padding: EdgeInsets.symmetric(horizontal: 15.0, vertical: 8.0),
               child: TextField(
+                obscureText: passToggle ? true : false,
                 decoration: InputDecoration(
                     labelText: "Email Password",
                     border: OutlineInputBorder(),
-                    prefixIcon: Icon(Icons.lock)),
+                    prefixIcon: Icon(Icons.lock),
+                    suffixIcon: InkWell(
+                      onTap: () {
+                        if (passToggle == true) {
+                          passToggle = false;
+                        } else {
+                          passToggle = true;
+                        }
+                        setState(() {
+                          
+                        });
+                      },
+                    )),
               ),
             ),
-             //Data fields
+            //Data fields
             const Padding(
               padding: EdgeInsets.symmetric(horizontal: 15.0, vertical: 8.0),
               child: TextField(
@@ -62,7 +75,7 @@ class _SignUpScreenState extends State<SignUpScreen> {
                     prefixIcon: Icon(Icons.call)),
               ),
             ),
-             //Data fields
+            //Data fields
             Padding(
               padding: const EdgeInsets.all(8.0),
               child: SizedBox(
@@ -71,15 +84,8 @@ class _SignUpScreenState extends State<SignUpScreen> {
                   color: const Color(0xFF7165D6),
                   borderRadius: BorderRadius.circular(10),
                   child: InkWell(
-                    onTap: () {
-                      if (passToggle == true) {
-                        passToggle = true;
-                      } else {
-                        passToggle = true;
-                      }
-                      setState(() {});
-                    },
-                  //button
+                    onTap: () {},
+                    //button
                     child: const Padding(
                       padding:
                           EdgeInsets.symmetric(vertical: 15, horizontal: 40),
