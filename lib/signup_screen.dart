@@ -42,29 +42,8 @@ class _SignUpScreenState extends State<SignUpScreen> {
                     prefixIcon: Icon(Icons.email)),
               ),
             ),
-            //Data fields
-            Padding(
-              padding: EdgeInsets.symmetric(horizontal: 15.0, vertical: 8.0),
-              child: TextField(
-                obscureText: passToggle ? true : false,
-                decoration: InputDecoration(
-                    labelText: "Email Password",
-                    border: OutlineInputBorder(),
-                    prefixIcon: Icon(Icons.lock),
-                    suffixIcon: InkWell(
-                      onTap: () {
-                        if (passToggle == true) {
-                          passToggle = false;
-                        } else {
-                          passToggle = true;
-                        }
-                        setState(() {
-                          
-                        });
-                      },
-                    )),
-              ),
-            ),
+            // Data fields
+
             //Data fields
             const Padding(
               padding: EdgeInsets.symmetric(horizontal: 15.0, vertical: 8.0),
@@ -91,7 +70,7 @@ class _SignUpScreenState extends State<SignUpScreen> {
                           EdgeInsets.symmetric(vertical: 15, horizontal: 40),
                       child: Center(
                         child: Text(
-                          'Sign Up',
+                          'Create Account',
                           style: TextStyle(
                               color: Colors.white,
                               fontSize: 22,

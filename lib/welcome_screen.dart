@@ -7,8 +7,8 @@ class WelcomeScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Material(
-      child: Padding(
+    return Scaffold(
+      body: Padding(
         padding: const EdgeInsets.only(bottom: 30),
         child: Container(
           width: MediaQuery.of(context).size.width,
