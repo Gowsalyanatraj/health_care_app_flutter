@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:health_care_app/navbar_roots.dart';
 
 import 'login_screen.dart';
 
@@ -16,13 +17,13 @@ class WelcomeScreen extends StatelessWidget {
           padding: EdgeInsets.all(10),
           child: Column(
             children: [
-              SizedBox(height: 50),
+              SizedBox(height:15),
               Align(
                   alignment: Alignment.centerRight,
                   child: TextButton(
                       onPressed: () {
-                        // Navigator.push(context, MaterialPageRoute(builder: (context) =>
-                        //  ));
+                        Navigator.push(context, MaterialPageRoute(builder: (context) => NavBarRoots(),
+                         ));
                       },
                       child: Text(
                         'SKIP',

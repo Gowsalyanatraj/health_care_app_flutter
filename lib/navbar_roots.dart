@@ -33,15 +33,19 @@ class _NavBarRootsState extends State<NavBarRoots> {
           type: BottomNavigationBarType.fixed,
           selectedItemColor: Color(0xFF7165D6),
           unselectedItemColor: Colors.black26,
-          selectedLabelStyle: TextStyle(
-            fontWeight: FontWeight.bold,
-            fontSize: 15
-          ),
+          selectedLabelStyle:
+              TextStyle(fontWeight: FontWeight.bold, fontSize: 15),
           currentIndex: _selectedIndex,
           onTap: (index) {
-            
+            setState(() {
+              _selectedIndex = index;
+            });
           },
-
+          items: [
+            BottomNavigationBarItem(icon: Icon(Icons.home), label: "Home"),
+              BottomNavigationBarItem(icon: Icon(Icons.home), label: "Home"),
+                BottomNavigationBarItem(icon: Icon(Icons.home), label: "Home")
+          ],
         ),
       ),
     );
