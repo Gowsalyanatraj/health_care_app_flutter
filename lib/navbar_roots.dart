@@ -1,3 +1,4 @@
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:health_care_app/screens/home_screen.dart';
 
@@ -41,10 +42,11 @@ class _NavBarRootsState extends State<NavBarRoots> {
               _selectedIndex = index;
             });
           },
-          items: [
+          items:const[
             BottomNavigationBarItem(icon: Icon(Icons.home), label: "Home"),
-              BottomNavigationBarItem(icon: Icon(Icons.home), label: "Home"),
-                BottomNavigationBarItem(icon: Icon(Icons.home), label: "Home")
+              BottomNavigationBarItem(icon: Icon(CupertinoIcons.chat_bubble_2_fill), label: "Message"),
+                BottomNavigationBarItem(icon: Icon(Icons.calendar_month_outlined), label: "Schedule"),
+                   BottomNavigationBarItem(icon: Icon(Icons.settings), label: "Settings"),
           ],
         ),
       ),
