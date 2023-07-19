@@ -22,7 +22,7 @@ class HomeScreen extends StatelessWidget {
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: [
                 Text(
-                  "Hello Keerthi",
+                  "Hello Madan",
                   style: TextStyle(fontSize: 35, fontWeight: FontWeight.w500),
                 ),
                 CircleAvatar(
@@ -67,7 +67,7 @@ class HomeScreen extends StatelessWidget {
                             color: Colors.white, fontWeight: FontWeight.w500),
                       ),
                       const SizedBox(height: 5.0),
-                      Text(
+                      const Text(
                         "Create an Appointment",
                         style: TextStyle(
                           color: Colors.white,
@@ -97,13 +97,13 @@ class HomeScreen extends StatelessWidget {
                           decoration: const BoxDecoration(
                               color: Color(0xFF7165D6), shape: BoxShape.circle),
                           child: const Icon(
-                            Icons.add,
+                            Icons.home_filled,
                             color: Colors.white,
                             size: 35,
                           )),
                       const SizedBox(height: 30.0),
                       const Text(
-                        "Client Visit",
+                        "Doctor Visit",
                         style: TextStyle(
                             color: Color(0xFF7165D6),
                             fontWeight: FontWeight.w500),
