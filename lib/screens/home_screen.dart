@@ -77,12 +77,12 @@ class HomeScreen extends StatelessWidget {
                   ),
                 ),
               ),
-                 InkWell(
+              InkWell(
                 onTap: () {},
                 child: Container(
                   padding: const EdgeInsets.all(20),
                   decoration: BoxDecoration(
-                      color: const Color(0xFF7165D6),
+                      color: Colors.white,
                       borderRadius: BorderRadius.circular(10),
                       boxShadow: const [
                         BoxShadow(
@@ -95,31 +95,32 @@ class HomeScreen extends StatelessWidget {
                       Container(
                           padding: const EdgeInsets.all(0.8),
                           decoration: const BoxDecoration(
-                              color: Colors.white, shape: BoxShape.circle),
+                              color: Color(0xFF7165D6), shape: BoxShape.circle),
                           child: const Icon(
                             Icons.add,
-                            color: Color(0xFF7165D6),
+                            color: Colors.white,
                             size: 35,
                           )),
                       const SizedBox(height: 30.0),
                       const Text(
                         "Client Visit",
                         style: TextStyle(
-                            color: Colors.white, fontWeight: FontWeight.w500),
+                            color: Color(0xFF7165D6),
+                            fontWeight: FontWeight.w500),
                       ),
                       const SizedBox(height: 5.0),
-                      Text(
+                      const Text(
                         "Create an Appointment",
                         style: TextStyle(
-                          color: Colors.white,
+                          color: Color(0xFF7165D6),
                         ),
-                      )
+                      ),
                     ],
                   ),
                 ),
               ),
             ],
-          )
+          ),
         ],
       ),
     );
