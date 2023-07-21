@@ -95,24 +95,24 @@ class HomeScreen extends StatelessWidget {
                       Container(
                           padding: const EdgeInsets.all(0.8),
                           decoration: const BoxDecoration(
-                              color: Color(0xFF7165D6), shape: BoxShape.circle),
+                              color: Color(0xFFF0EEFA), shape: BoxShape.circle),
                           child: const Icon(
                             Icons.home_filled,
-                            color: Colors.white,
+                            color: Color(0xFF7165D6),
                             size: 35,
                           )),
                       const SizedBox(height: 30.0),
                       const Text(
-                        "Doctor Visit",
+                        "Home Visit",
                         style: TextStyle(
                             color: Color(0xFF7165D6),
                             fontWeight: FontWeight.w500),
                       ),
                       const SizedBox(height: 5.0),
                       const Text(
-                        "Create an Appointment",
+                        "Call the doctor home",
                         style: TextStyle(
-                          color: Color(0xFF7165D6),
+                          color: Colors.black54,
                         ),
                       ),
                     ],
