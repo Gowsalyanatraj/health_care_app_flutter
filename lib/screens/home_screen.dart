@@ -121,6 +121,17 @@ class HomeScreen extends StatelessWidget {
               ),
             ],
           ),
+          const SizedBox(height: 25),
+          const Padding(
+            padding: EdgeInsets.only(left: 15),
+            child: Text(
+              "What is your symptoms?",
+              style: TextStyle(
+                  fontSize: 23,
+                  fontWeight: FontWeight.w500,
+                  color: Colors.black54),
+            ),
+          )
         ],
       ),
     );
