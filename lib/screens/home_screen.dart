@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
 class HomeScreen extends StatelessWidget {
-  List symptoms = ["Fever", "Sinus", "Cough", "Head-ache"];
+  List symptoms = ["Fever", "Sinus", "Cough", "Head-ache",];
   List images = [
     "doctor1.jpg",
     "doctor2.jpg",
@@ -130,6 +130,30 @@ class HomeScreen extends StatelessWidget {
                   fontSize: 23,
                   fontWeight: FontWeight.w500,
                   color: Colors.black54),
+            ),
+          ),
+          SizedBox(
+            height: 70,
+            child: ListView.builder(
+              shrinkWrap: true,
+              scrollDirection: Axis.horizontal,
+              itemCount: symptoms.length,
+              itemBuilder: (context, index) {
+                return Container(
+                  margin: EdgeInsets.symmetric(vertical: 10, horizontal: 15),
+                  padding: EdgeInsets.symmetric(horizontal: 25),
+                  decoration: BoxDecoration(
+                    color: Color(0xFFF4F6FA),
+                    borderRadius: BorderRadius.circular(10),
+                    boxShadow: [
+                      BoxShadow(
+                        blurRadius: 4,
+                        spreadRadius: 2
+                      )
+                    ]
+                  ),
+                );
+              },
             ),
           )
         ],
