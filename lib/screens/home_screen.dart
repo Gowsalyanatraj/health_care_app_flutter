@@ -8,7 +8,7 @@ class HomeScreen extends StatelessWidget {
     "Head-ache",
   ];
   List images = [
-    "doctor1.jpg",
+    "doctor1.png",
     "doctor2.jpg",
     "doctor3.jpg",
     "doctor4.jpg",
@@ -168,7 +168,53 @@ class HomeScreen extends StatelessWidget {
                 );
               },
             ),
-          )
+          ),
+          SizedBox(
+            height: 15,
+          ),
+          Padding(
+            padding: const EdgeInsets.only(left: 15),
+            child: Text(
+              "Popular Doctor",
+              style: TextStyle(
+                  fontSize: 23,
+                  fontWeight: FontWeight.w500,
+                  color: Colors.black54),
+            ),
+          ),
+          GridView.builder(
+              gridDelegate:
+                  SliverGridDelegateWithFixedCrossAxisCount(crossAxisCount: 2),
+              itemCount: 4,
+              shrinkWrap: true,
+              physics: NeverScrollableScrollPhysics(),
+              itemBuilder: (context, index) {
+                return InkWell(
+                  onTap: () {},
+                  child: Container(
+                    margin: EdgeInsets.all(10),
+                    padding: EdgeInsets.symmetric(vertical: 15),
+                    decoration: BoxDecoration(
+                        color: Colors.white,
+                        borderRadius: BorderRadius.circular(10),
+                        boxShadow: [
+                          BoxShadow(
+                              color: Colors.black12,
+                              blurRadius: 4,
+                              spreadRadius: 2)
+                        ]),
+                    child: Column(
+                      children: [
+                        CircleAvatar(
+                          radius: 35,
+                          backgroundImage:
+                              AssetImage("assets/${images[index]}"),
+                        )
+                      ],
+                    ),
+                  ),
+                );
+              })
         ],
       ),
     );
