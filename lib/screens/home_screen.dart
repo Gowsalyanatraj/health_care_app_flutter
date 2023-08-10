@@ -8,10 +8,10 @@ class HomeScreen extends StatelessWidget {
     "Head-ache",
   ];
   List images = [
-    "doctor1.png",
-    "doctor2.jpg",
-    "doctor3.jpg",
-    "doctor4.jpg",
+    "assets/doctor1.png",
+    "assets/doctor2.png",
+    "assets/doctor3.png",
+    "assets/doctor4.png",
   ];
 
   @override
@@ -206,10 +206,12 @@ class HomeScreen extends StatelessWidget {
                     child: Column(
                       children: [
                         CircleAvatar(
+                          backgroundColor: Colors.black12,
                           radius: 35,
                           backgroundImage:
-                              AssetImage("assets/${images[index]}"),
-                        )
+                              AssetImage(images[index]),
+                        ),
+                        Text("Dr.Doctor Name")
                       ],
                     ),
                   ),
