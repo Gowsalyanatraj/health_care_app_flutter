@@ -150,13 +150,13 @@ class HomeScreen extends StatelessWidget {
                   itemCount: symptoms.length,
                   itemBuilder: (context, index) {
                     return Container(
-                      margin:
-                          EdgeInsets.symmetric(vertical: 10, horizontal: 15),
-                      padding: EdgeInsets.symmetric(horizontal: 25),
+                      margin: const EdgeInsets.symmetric(
+                          vertical: 10, horizontal: 15),
+                      padding: const EdgeInsets.symmetric(horizontal: 25),
                       decoration: BoxDecoration(
-                          color: Color(0xFFF4F6FA),
+                          color: const Color(0xFFF4F6FA),
                           borderRadius: BorderRadius.circular(10),
-                          boxShadow: [
+                          boxShadow: const [
                             BoxShadow(
                                 color: Colors.black12,
                                 blurRadius: 4,
@@ -165,7 +165,7 @@ class HomeScreen extends StatelessWidget {
                       child: Center(
                         child: Text(
                           symptoms[index],
-                          style: TextStyle(
+                          style: const TextStyle(
                               fontSize: 16,
                               fontWeight: FontWeight.w500,
                               color: Colors.black54),
@@ -175,11 +175,11 @@ class HomeScreen extends StatelessWidget {
                   },
                 ),
               ),
-              SizedBox(
+              const SizedBox(
                 height: 15,
               ),
-              Padding(
-                padding: const EdgeInsets.only(left: 15),
+              const Padding(
+                padding: EdgeInsets.only(left: 15),
                 child: Text(
                   "Popular Doctor",
                   style: TextStyle(
@@ -189,21 +189,21 @@ class HomeScreen extends StatelessWidget {
                 ),
               ),
               GridView.builder(
-                  gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
+                  gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
                       crossAxisCount: 2),
                   itemCount: 4,
                   shrinkWrap: true,
-                  physics: NeverScrollableScrollPhysics(),
+                  physics: const NeverScrollableScrollPhysics(),
                   itemBuilder: (context, index) {
                     return InkWell(
                       onTap: () {},
                       child: Container(
-                        margin: EdgeInsets.all(10),
-                        padding: EdgeInsets.symmetric(vertical: 15),
+                        margin: const EdgeInsets.all(10),
+                        padding: const EdgeInsets.symmetric(vertical: 15),
                         decoration: BoxDecoration(
                             color: Colors.white,
                             borderRadius: BorderRadius.circular(10),
-                            boxShadow: [
+                            boxShadow: const [
                               BoxShadow(
                                   color: Colors.black12,
                                   blurRadius: 4,
@@ -216,25 +216,29 @@ class HomeScreen extends StatelessWidget {
                               radius: 35,
                               backgroundImage: AssetImage(images[index]),
                             ),
-                            SizedBox(height: 5.0),
-                            Text(
+                            const SizedBox(height: 5.0),
+                            const Text(
                               "Dr.Doctor Name",
                               style: TextStyle(
                                   color: Colors.black54,
                                   fontSize: 18,
                                   fontWeight: FontWeight.w500),
                             ),
-                            Text(
+                            const Text(
                               "Therapist",
                               style: TextStyle(color: Colors.black45),
                             ),
-                            Row(
+                            const Row(
                               mainAxisSize: MainAxisSize.min,
                               mainAxisAlignment: MainAxisAlignment.center,
                               children: [
                                 Icon(
                                   Icons.star,
                                   color: Colors.amber,
+                                ),
+                                Text(
+                                  "4.9",
+                                  style: TextStyle(color: Colors.black45),
                                 )
                               ],
                             )
