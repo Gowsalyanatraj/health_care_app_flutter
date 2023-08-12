@@ -32,10 +32,10 @@ class _NavBarRootsState extends State<NavBarRoots> {
         child: BottomNavigationBar(
           backgroundColor: Colors.white,
           type: BottomNavigationBarType.fixed,
-          selectedItemColor: Color(0xFF7165D6),
+          selectedItemColor: const Color(0xFF7165D6),
           unselectedItemColor: Colors.black26,
           selectedLabelStyle:
-              TextStyle(fontWeight: FontWeight.bold, fontSize: 15),
+              const TextStyle(fontWeight: FontWeight.bold, fontSize: 15),
           currentIndex: _selectedIndex,
           onTap: (index) {
             setState(() {

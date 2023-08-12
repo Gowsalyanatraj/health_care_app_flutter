@@ -49,7 +49,7 @@ class HomeScreen extends StatelessWidget {
                     child: Container(
                       padding: const EdgeInsets.all(20),
                       decoration: BoxDecoration(
-                          color: const Color(0xFF7165D6),
+                          color: const Color(0xFF6750A4),
                           borderRadius: BorderRadius.circular(10),
                           boxShadow: const [
                             BoxShadow(
@@ -65,7 +65,7 @@ class HomeScreen extends StatelessWidget {
                                   color: Colors.white, shape: BoxShape.circle),
                               child: const Icon(
                                 Icons.add,
-                                color: Color(0xFF7165D6),
+                                color: Color(0xFF6750A4),
                                 size: 35,
                               )),
                           const SizedBox(height: 30.0),
