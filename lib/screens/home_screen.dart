@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 
+// ignore: must_be_immutable
 class HomeScreen extends StatelessWidget {
   List symptoms = [
     "Fever",
@@ -13,6 +14,8 @@ class HomeScreen extends StatelessWidget {
     "assets/doctor3.png",
     "assets/doctor4.png",
   ];
+
+  HomeScreen({super.key});
 
   @override
   Widget build(BuildContext context) {
