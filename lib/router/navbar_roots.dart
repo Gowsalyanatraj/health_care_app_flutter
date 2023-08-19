@@ -2,6 +2,8 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:health_care_app/screens/home_screen.dart';
 
+import '../screens/settings_screen.dart';
+
 class NavBarRoots extends StatefulWidget {
   const NavBarRoots({super.key});
 
@@ -19,7 +21,7 @@ class _NavBarRootsState extends State<NavBarRoots> {
     //SCHEDULE SCREEN
     Container(),
     //SETTING SCREEN
-    Container()
+    SettingScreen()
   ];
 
   @override
