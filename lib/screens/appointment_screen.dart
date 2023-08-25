@@ -1,3 +1,4 @@
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
 class AppointmentScreen extends StatelessWidget {
@@ -38,13 +39,67 @@ class AppointmentScreen extends StatelessWidget {
                           ),
                         ),
                       ],
+                    ),
+                    Padding(
+                      padding: EdgeInsets.symmetric(vertical: 10),
+                      child: Column(
+                        children: [
+                          CircleAvatar(
+                            radius: 35,
+                            backgroundImage: AssetImage("assets/doctor2.png"),
+                          ),
+                          SizedBox(height: 5.0),
+                          Text(
+                            "Dr. Doctor Name",
+                            style: TextStyle(
+                                fontSize: 23,
+                                fontWeight: FontWeight.w500,
+                                color: Colors.white),
+                          ),
+                          SizedBox(height: 5.0),
+                          Text(
+                            "Therapist",
+                            style: TextStyle(
+                                fontWeight: FontWeight.bold,
+                                color: Colors.white),
+                          ),
+                          SizedBox(height: 5.0),
+                          Row(
+                            mainAxisAlignment: MainAxisAlignment.center,
+                            children: [
+                              Container(
+                                padding: EdgeInsets.all(10),
+                                decoration: BoxDecoration(
+                                  color: Color(0xFF9F97E2),
+                                  shape: BoxShape.circle,
+                                ),
+                                child: Icon(
+                                  Icons.call,
+                                  color: Colors.white,
+                                  size: 25,
+                                ),
+                              ),
+                              SizedBox(width: 20),
+                              Container(
+                                padding: EdgeInsets.all(10),
+                                decoration: BoxDecoration(
+                                  color: Color(0xFF9F97E2),
+                                  shape: BoxShape.circle,
+                                ),
+                                child: Icon(
+                                  CupertinoIcons.chat_bubble_text_fill,
+                                  color: Colors.white,
+                                  size: 25,
+                                ),
+                              )
+                            ],
+                          )
+                        ],
+                      ),
                     )
                   ],
                 ),
               ),
-              CircleAvatar(
-                radius: 40,
-              )
             ],
           ),
         ),
