@@ -41,52 +41,52 @@ class AppointmentScreen extends StatelessWidget {
                       ],
                     ),
                     Padding(
-                      padding: EdgeInsets.symmetric(vertical: 10),
+                      padding: const EdgeInsets.symmetric(vertical: 10),
                       child: Column(
                         children: [
-                          CircleAvatar(
+                          const CircleAvatar(
                             radius: 35,
                             backgroundImage: AssetImage("assets/doctor2.png"),
                           ),
-                          SizedBox(height: 5.0),
-                          Text(
+                          const SizedBox(height: 5.0),
+                          const Text(
                             "Dr. Doctor Name",
                             style: TextStyle(
                                 fontSize: 23,
                                 fontWeight: FontWeight.w500,
                                 color: Colors.white),
                           ),
-                          SizedBox(height: 5.0),
-                          Text(
+                          const SizedBox(height: 5.0),
+                          const Text(
                             "Therapist",
                             style: TextStyle(
                                 fontWeight: FontWeight.bold,
                                 color: Colors.white),
                           ),
-                          SizedBox(height: 5.0),
+                          const SizedBox(height: 5.0),
                           Row(
                             mainAxisAlignment: MainAxisAlignment.center,
                             children: [
                               Container(
-                                padding: EdgeInsets.all(10),
-                                decoration: BoxDecoration(
+                                padding: const EdgeInsets.all(10),
+                                decoration: const BoxDecoration(
                                   color: Color(0xFF9F97E2),
                                   shape: BoxShape.circle,
                                 ),
-                                child: Icon(
+                                child: const Icon(
                                   Icons.call,
                                   color: Colors.white,
                                   size: 25,
                                 ),
                               ),
-                              SizedBox(width: 20),
+                              const SizedBox(width: 20),
                               Container(
-                                padding: EdgeInsets.all(10),
-                                decoration: BoxDecoration(
+                                padding: const EdgeInsets.all(10),
+                                decoration: const BoxDecoration(
                                   color: Color(0xFF9F97E2),
                                   shape: BoxShape.circle,
                                 ),
-                                child: Icon(
+                                child: const Icon(
                                   CupertinoIcons.chat_bubble_text_fill,
                                   color: Colors.white,
                                   size: 25,
@@ -100,32 +100,32 @@ class AppointmentScreen extends StatelessWidget {
                   ],
                 ),
               ),
-             SizedBox(height: 20.0),
-             Container(
-              height: MediaQuery.of(context).size.height/1.5,
-              width: double.infinity,
-              padding: EdgeInsets.only(top: 20, left: 15),
-              decoration: BoxDecoration(
-                color: Colors.white,
-                borderRadius: BorderRadius.only(
-                  topLeft: Radius.circular(10),
-                  topRight: Radius.circular(10),
-                )
-              ),
-              child: Column(
-                crossAxisAlignment: CrossAxisAlignment.start,
-                mainAxisSize: MainAxisSize.max,
-                children: [
-                  Text("About Doctor",
-                  style: TextStyle(
-                    fontSize: 18.0,
-                    fontWeight: FontWeight.w500
-                  ),
-                  )
-
-                ],
-              ),
-             ) 
+              const SizedBox(height: 20.0),
+              Container(
+                height: MediaQuery.of(context).size.height / 1.5,
+                width: double.infinity,
+                padding: const EdgeInsets.only(top: 20, left: 15),
+                decoration: const BoxDecoration(
+                    color: Colors.white,
+                    borderRadius: BorderRadius.only(
+                      topLeft: Radius.circular(10),
+                      topRight: Radius.circular(10),
+                    )),
+                child: const Column(
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  mainAxisSize: MainAxisSize.max,
+                  children: [
+                    Center(
+                      child: Text(
+                        "About Doctor",
+                        style: TextStyle(
+                            fontSize: 18.0, fontWeight: FontWeight.w500),
+                      ),
+                    ),
+                    
+                  ],
+                ),
+              )
             ],
           ),
         ),
