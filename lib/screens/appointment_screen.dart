@@ -100,6 +100,32 @@ class AppointmentScreen extends StatelessWidget {
                   ],
                 ),
               ),
+             SizedBox(height: 20.0),
+             Container(
+              height: MediaQuery.of(context).size.height/1.5,
+              width: double.infinity,
+              padding: EdgeInsets.only(top: 20, left: 15),
+              decoration: BoxDecoration(
+                color: Colors.white,
+                borderRadius: BorderRadius.only(
+                  topLeft: Radius.circular(10),
+                  topRight: Radius.circular(10),
+                )
+              ),
+              child: Column(
+                crossAxisAlignment: CrossAxisAlignment.start,
+                mainAxisSize: MainAxisSize.max,
+                children: [
+                  Text("About Doctor",
+                  style: TextStyle(
+                    fontSize: 18.0,
+                    fontWeight: FontWeight.w500
+                  ),
+                  )
+
+                ],
+              ),
+             ) 
             ],
           ),
         ),
