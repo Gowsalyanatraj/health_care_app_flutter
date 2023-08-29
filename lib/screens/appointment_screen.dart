@@ -122,8 +122,11 @@ class AppointmentScreen extends StatelessWidget {
                             fontSize: 18.0, fontWeight: FontWeight.w500),
                       ),
                     ),
-                    
+                    SizedBox(height: 5.0),
+                    Text(
+                        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."),
                   ],
+                  
                 ),
               )
             ],
