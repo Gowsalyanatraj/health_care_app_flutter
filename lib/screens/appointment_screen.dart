@@ -144,6 +144,12 @@ class AppointmentScreen extends StatelessWidget {
                           "4.9",
                           style: TextStyle(
                               fontWeight: FontWeight.w500, fontSize: 16.0),
+                        ),
+                        SizedBox(width: 5.0),
+                        Text("124",
+                        style: TextStyle(
+                          fontWeight: FontWeight.w500, fontSize: 16.0
+                        ),
                         )
                       ],
                     ),
