@@ -111,48 +111,78 @@ class AppointmentScreen extends StatelessWidget {
                       topLeft: Radius.circular(10),
                       topRight: Radius.circular(10),
                     )),
-                child: const Column(
+                child: Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
                   mainAxisSize: MainAxisSize.max,
                   children: [
-                    Center(
+                    const Center(
                       child: Text(
                         "About Doctor",
                         style: TextStyle(
                             fontSize: 18.0, fontWeight: FontWeight.w500),
                       ),
                     ),
-                    SizedBox(height: 5.0),
-                    Text(
-                      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+                    const SizedBox(height: 5.0),
+                    const Text(
+                      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ",
                       style: TextStyle(fontSize: 16.0, color: Colors.black54),
                     ),
-                    SizedBox(height: 10),
+                    const SizedBox(height: 10),
                     Row(
                       children: [
-                        Text(
+                        const Text(
                           "Reviews",
                           style: TextStyle(
                               fontSize: 18, fontWeight: FontWeight.w500),
                         ),
-                        SizedBox(width: 10),
-                        Icon(
+                        const SizedBox(width: 10),
+                        const Icon(
                           Icons.star,
                           color: Colors.amber,
                         ),
-                        Text(
+                        const Text(
                           "4.9",
                           style: TextStyle(
                               fontWeight: FontWeight.w500, fontSize: 16.0),
                         ),
-                        SizedBox(width: 5.0),
-                        Text("124",
-                        style: TextStyle(
-                          fontWeight: FontWeight.w500, fontSize: 16.0
+                        const SizedBox(width: 5.0),
+                        const Text(
+                          "124",
+                          style: TextStyle(
+                              fontWeight: FontWeight.w500, fontSize: 16.0),
                         ),
+                        const Spacer(),
+                        TextButton(
+                          onPressed: () {},
+                          child: const Text(
+                            "See All",
+                            style: TextStyle(
+                                fontWeight: FontWeight.w500,
+                                fontSize: 16.0,
+                                color: Color(0xFf7165D6)),
+                          ),
                         )
                       ],
                     ),
+                    SizedBox(
+                      height: 160,
+                      child: ListView.builder(itemBuilder: ((context, index) {
+                        return Container(
+                          margin: const EdgeInsets.all(10),
+                          padding: const EdgeInsets.symmetric(vertical: 5.0),
+                          decoration: BoxDecoration(
+                              color: Colors.white,
+                              borderRadius: BorderRadius.circular(10),
+                              boxShadow: [
+                                const BoxShadow(
+                                    color: Colors.black12,
+                                    blurRadius: 4,
+                                    spreadRadius: 2)
+                              ]),
+                          child: const SizedBox(),
+                        );
+                      })),
+                    )
                   ],
                 ),
               )
