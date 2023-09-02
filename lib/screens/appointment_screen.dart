@@ -2,7 +2,12 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
 class AppointmentScreen extends StatelessWidget {
-  const AppointmentScreen({super.key});
+  List images = [
+    "doctor1.png",
+    "doctor2.png",
+    "doctor3.png",
+    "doctor4.png",
+  ];
 
   @override
   Widget build(BuildContext context) {
@@ -166,22 +171,45 @@ class AppointmentScreen extends StatelessWidget {
                     ),
                     SizedBox(
                       height: 160,
-                      child: ListView.builder(itemBuilder: ((context, index) {
-                        return Container(
-                          margin: const EdgeInsets.all(10),
-                          padding: const EdgeInsets.symmetric(vertical: 5.0),
-                          decoration: BoxDecoration(
-                              color: Colors.white,
-                              borderRadius: BorderRadius.circular(10),
-                              boxShadow: [
-                                const BoxShadow(
-                                    color: Colors.black12,
-                                    blurRadius: 4,
-                                    spreadRadius: 2)
-                              ]),
-                          child: const SizedBox(),
-                        );
-                      })),
+                      child: ListView.builder(
+                          scrollDirection: Axis.horizontal,
+                          itemCount: 4,
+                          itemBuilder: ((context, index) {
+                            return Container(
+                              margin: const EdgeInsets.all(10),
+                              padding:
+                                  const EdgeInsets.symmetric(vertical: 5.0),
+                              decoration: BoxDecoration(
+                                  color: Colors.white,
+                                  borderRadius: BorderRadius.circular(10),
+                                  boxShadow: const [
+                                    BoxShadow(
+                                        color: Colors.black12,
+                                        blurRadius: 4,
+                                        spreadRadius: 2)
+                                  ]),
+                              child: SizedBox(
+                                width: MediaQuery.of(context).size.width / 1.4,
+                                child: Column(
+                                  children: [
+                                    ListTile(
+                                      leading: CircleAvatar(
+                                        backgroundColor: Colors.grey.shade200,
+                                        radius: 25,
+                                        backgroundImage: AssetImage(
+                                            "assets/${images[index]}"),
+                                      ),
+                                      title: const Text(
+                                        "Dr. Doctor Name",
+                                        style: TextStyle(
+                                            fontWeight: FontWeight.bold),
+                                      ),
+                                    )
+                                  ],
+                                ),
+                              ),
+                            );
+                          })),
                     )
                   ],
                 ),
