@@ -31,7 +31,7 @@ class AppointmentScreen extends StatelessWidget {
                           },
                           child: const Icon(
                             Icons.arrow_back_ios,
-                            color: Colors.white,
+                            color: Colors.blue,
                           ),
                         ),
                         InkWell(
