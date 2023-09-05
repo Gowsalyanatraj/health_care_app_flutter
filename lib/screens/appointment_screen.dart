@@ -31,7 +31,7 @@ class AppointmentScreen extends StatelessWidget {
                           },
                           child: const Icon(
                             Icons.arrow_back_ios,
-                            color: Colors.blue,
+                            color: Colors.white,
                           ),
                         ),
                         InkWell(
@@ -152,9 +152,11 @@ class AppointmentScreen extends StatelessWidget {
                         ),
                         const SizedBox(width: 5.0),
                         const Text(
-                          "124",
+                          "(124)",
                           style: TextStyle(
-                              fontWeight: FontWeight.w500, fontSize: 16.0),
+                              color: Colors.grey,
+                              fontWeight: FontWeight.w500,
+                              fontSize: 16.0),
                         ),
                         const Spacer(),
                         TextButton(
@@ -204,12 +206,66 @@ class AppointmentScreen extends StatelessWidget {
                                         style: TextStyle(
                                             fontWeight: FontWeight.bold),
                                       ),
+                                      subtitle: const Text("1 day ago"),
+                                      trailing: const Row(
+                                        mainAxisSize: MainAxisSize.min,
+                                        mainAxisAlignment:
+                                            MainAxisAlignment.center,
+                                        children: [
+                                          Icon(
+                                            Icons.star,
+                                            color: Colors.amber,
+                                          ),
+                                          Text(
+                                            "4.9",
+                                            style: TextStyle(
+                                                color: Colors.black54),
+                                          )
+                                        ],
+                                      ),
+                                    ),
+                                    const SizedBox(
+                                      height: 0.5,
+                                    ),
+                                    const Padding(
+                                      padding:
+                                          EdgeInsets.symmetric(horizontal: 10),
+                                      child: Text(
+                                        maxLines: 2,
+                                        overflow: TextOverflow.ellipsis,
+                                        "very much thank you to Dr. Name. He is a great care takeing for my health",
+                                        style: TextStyle(color: Colors.black),
+                                      ),
                                     )
                                   ],
                                 ),
                               ),
                             );
                           })),
+                    ),
+                    const SizedBox(height: 10),
+                    const Text(
+                      "Location",
+                      style: TextStyle(
+                        fontSize: 18.0,
+                        fontWeight: FontWeight.w500,
+                      ),
+                    ),
+                    ListTile(
+                      leading: Container(
+                        padding: EdgeInsets.all(10),
+                        decoration: BoxDecoration(
+                            color: Color(0xFFF0EEFA), shape: BoxShape.circle),
+                        child: Icon(
+                          Icons.location_on,
+                          color: Color(0xFF7165D6),
+                          size: 30,
+                        ),
+                      ),
+                      title: Text(
+                        "Kovai, Medical Center",
+                        style: TextStyle(fontWeight: FontWeight.bold),
+                      ),
                     )
                   ],
                 ),
