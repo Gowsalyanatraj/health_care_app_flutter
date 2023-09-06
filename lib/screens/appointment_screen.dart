@@ -266,9 +266,30 @@ class AppointmentScreen extends StatelessWidget {
                         "Kovai, Medical Center",
                         style: TextStyle(fontWeight: FontWeight.bold),
                       ),
+                      subtitle: Text("address line of the medical center"),
                     )
                   ],
                 ),
+              )
+            ],
+          ),
+        ),
+        bottomNavigationBar: Container(
+          padding: EdgeInsets.all(15),
+          height: 130,
+          decoration: BoxDecoration(color: Colors.white, boxShadow: [
+            BoxShadow(color: Colors.black12, blurRadius: 4, spreadRadius: 2)
+          ]),
+          child: Column(
+            children: [
+              Row(
+                mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                children: [
+                  Text(
+                    "Consultation Price",
+                    style: TextStyle(color: Colors.black54),
+                  )
+                ],
               )
             ],
           ),
