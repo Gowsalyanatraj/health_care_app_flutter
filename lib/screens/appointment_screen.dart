@@ -282,14 +282,41 @@ class AppointmentScreen extends StatelessWidget {
           ]),
           child: Column(
             children: [
-              Row(
+              const Row(
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [
                   Text(
                     "Consultation Price",
                     style: TextStyle(color: Colors.black54),
+                  ),
+                  Text(
+                    "Rs.1000",
+                    style: TextStyle(
+                        fontSize: 20.0,
+                        color: Colors.black54,
+                        fontWeight: FontWeight.bold),
                   )
                 ],
+              ),
+              const SizedBox(height: 15.0),
+              InkWell(
+                onTap: () {},
+                child: Container(
+                  width: MediaQuery.of(context).size.width,
+                  padding: EdgeInsets.symmetric(vertical: 18),
+                  decoration: BoxDecoration(
+                      color: Color(0xFF7165D6),
+                      borderRadius: BorderRadius.circular(10)),
+                  child: Center(
+                    child: Text(
+                      "Book Appointment",
+                      style: TextStyle(
+                          color: Colors.white,
+                          fontSize: 18.0,
+                          fontWeight: FontWeight.w500),
+                    ),
+                  ),
+                ),
               )
             ],
           ),
