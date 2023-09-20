@@ -33,7 +33,7 @@ class HomeScreen extends StatelessWidget {
                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
                   children: [
                     Text(
-                      "Hello Madan",
+                      "Hello Dev",
                       style:
                           TextStyle(fontSize: 35, fontWeight: FontWeight.w500),
                     ),
