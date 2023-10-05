@@ -30,7 +30,7 @@ class WelcomeScreen extends StatelessWidget {
                            ));
                         },
                         child: const Text(
-                          'SKIP',
+                          'Skip',
                           style: TextStyle(
                             color: Color(0xFF7165D6),
                             fontSize: 20,
@@ -43,7 +43,7 @@ class WelcomeScreen extends StatelessWidget {
                 ),
                const  SizedBox(height: 0),
                 const Text(
-                  'Doctors Appointment',
+                  "Doctor's Appointment",
                   style: TextStyle(
                       color: Color(0xFF7165D6),
                       fontSize: 35,
