@@ -15,7 +15,7 @@ class _LoginScreenState extends State<LoginScreen> {
   @override
   Widget build(BuildContext context) {
     return Material(
-      color: Colors.white,
+      color: const Color.fromARGB(255, 177, 169, 169),
       child: SingleChildScrollView(
         child: SafeArea(
             child: Column(
@@ -31,7 +31,7 @@ class _LoginScreenState extends State<LoginScreen> {
               child: TextField(
                 decoration: InputDecoration(
                   border: OutlineInputBorder(),
-                  label: Text("Enter User Name"),
+                  label: Text("Enter user name"),
                   prefixIcon: Icon(Icons.person),
                 ),
               ),
