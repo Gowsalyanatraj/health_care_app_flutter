@@ -24,13 +24,13 @@ class _SettingScreenState extends State<SettingScreen> {
               radius: 30,
               backgroundImage: AssetImage("assets/doctor2.png"),
             ),
-            title: Text(
-              "Dr. Doctor Name",
-              style: TextStyle(
-                fontWeight: FontWeight.w500,
-                fontSize: 25,
-              ),
-            ),
+            // title: Text(
+            //   "Dr. Doctor Name",
+            //   style: TextStyle(
+            //     fontWeight: FontWeight.w500,
+            //     fontSize: 25,
+            //   ),
+            // ),
           )
         ],
       ),
