@@ -10,11 +10,11 @@ class SettingScreen extends StatefulWidget {
 class _SettingScreenState extends State<SettingScreen> {
   @override
   Widget build(BuildContext context) {
-    return const Padding(
+    return Padding(
       padding: EdgeInsets.only(top: 50, left: 20, right: 20),
       child: Column(
         children: [
-          Text(
+          const Text(
             "Settings",
             style: TextStyle(fontSize: 30, fontWeight: FontWeight.w500),
           ),
@@ -24,13 +24,22 @@ class _SettingScreenState extends State<SettingScreen> {
               radius: 30,
               backgroundImage: AssetImage("assets/doctor2.png"),
             ),
-            // title: Text(
-            //   "Dr. Doctor Name",
-            //   style: TextStyle(
-            //     fontWeight: FontWeight.w500,
-            //     fontSize: 25,
-            //   ),
-            // ),
+            title: Text(
+              "Dr. Doctor Name",
+              style: TextStyle(
+                fontWeight: FontWeight.w500,
+                fontSize: 25,
+              ),
+            ),
+            subtitle: Text("Profile"),
+          ),
+          Divider(height: 50),
+          ListTile(
+            onTap: () {},
+            leading: Container(
+              height: 100,
+              width: 100,
+            ),
           )
         ],
       ),
