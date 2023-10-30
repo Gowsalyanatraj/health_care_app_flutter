@@ -37,8 +37,11 @@ class _SettingScreenState extends State<SettingScreen> {
           ListTile(
             onTap: () {},
             leading: Container(
-              height: 100,
-              width: 100,
+              padding: EdgeInsets.all(10),
+              decoration: BoxDecoration(
+                color: Colors.blue.shade100,
+                shape: BoxShape.circle,
+              ),
             ),
           )
         ],
