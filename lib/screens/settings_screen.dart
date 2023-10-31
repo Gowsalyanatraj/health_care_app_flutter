@@ -19,8 +19,8 @@ class _SettingScreenState extends State<SettingScreen> {
             "Settings",
             style: TextStyle(fontSize: 30, fontWeight: FontWeight.w500),
           ),
-          SizedBox(height: 30),
-          ListTile(
+         const SizedBox(height: 30),
+         const ListTile(
             leading: CircleAvatar(
               radius: 30,
               backgroundImage: AssetImage("assets/doctor2.png"),
@@ -32,21 +32,28 @@ class _SettingScreenState extends State<SettingScreen> {
                 fontSize: 25,
               ),
             ),
+            
             subtitle: Text("Profile"),
           ),
-          Divider(height: 50),
+          const Divider(height: 50),
           ListTile(
             onTap: () {},
             leading: Container(
-              padding: EdgeInsets.all(10),
+              padding: const EdgeInsets.all(10),
               decoration: BoxDecoration(
                 color: Colors.blue.shade100,
                 shape: BoxShape.circle,
               ),
-              child: Icon(CupertinoIcons.person,
+              child: const Icon(CupertinoIcons.person,
               color: Colors.blue,
               size: 35,
               ),
+            ),
+            title: const Text("Profile",
+            style: TextStyle(
+              fontWeight: FontWeight.w400,
+              fontSize: 20.0,
+            ),
             ),
           )
         ],
