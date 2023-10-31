@@ -1,3 +1,4 @@
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
 class SettingScreen extends StatefulWidget {
@@ -41,6 +42,10 @@ class _SettingScreenState extends State<SettingScreen> {
               decoration: BoxDecoration(
                 color: Colors.blue.shade100,
                 shape: BoxShape.circle,
+              ),
+              child: Icon(CupertinoIcons.person,
+              color: Colors.blue,
+              size: 35,
               ),
             ),
           )
