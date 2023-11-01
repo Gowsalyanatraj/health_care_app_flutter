@@ -55,7 +55,9 @@ class _SettingScreenState extends State<SettingScreen> {
               fontSize: 20.0,
             ),
             ),
-          )
+            trailing: Icon(Icons.arrow_forward_ios_rounded),
+          ),
+          SizedBox(height: 20.0,)
         ],
       ),
     );
