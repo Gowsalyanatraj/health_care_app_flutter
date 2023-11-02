@@ -19,8 +19,8 @@ class _SettingScreenState extends State<SettingScreen> {
             "Settings",
             style: TextStyle(fontSize: 30, fontWeight: FontWeight.w500),
           ),
-         const SizedBox(height: 30),
-         const ListTile(
+          const SizedBox(height: 30),
+          const ListTile(
             leading: CircleAvatar(
               radius: 30,
               backgroundImage: AssetImage("assets/doctor2.png"),
@@ -32,7 +32,6 @@ class _SettingScreenState extends State<SettingScreen> {
                 fontSize: 25,
               ),
             ),
-            
             subtitle: Text("Profile"),
           ),
           const Divider(height: 50),
@@ -44,20 +43,62 @@ class _SettingScreenState extends State<SettingScreen> {
                 color: Colors.blue.shade100,
                 shape: BoxShape.circle,
               ),
-              child: const Icon(CupertinoIcons.person,
-              color: Colors.blue,
-              size: 35,
+              child: const Icon(
+                CupertinoIcons.person,
+                color: Colors.blue,
+                size: 35,
               ),
             ),
-            title: const Text("Profile",
-            style: TextStyle(
-              fontWeight: FontWeight.w400,
-              fontSize: 20.0,
-            ),
+            title: const Text(
+              "Profile",
+              style: TextStyle(
+                fontWeight: FontWeight.w400,
+                fontSize: 20.0,
+              ),
             ),
             trailing: Icon(Icons.arrow_forward_ios_rounded),
           ),
-          SizedBox(height: 20.0,)
+          SizedBox(
+            height: 20.0,
+          ),
+          ListTile(
+            leading: CircleAvatar(
+              radius: 30,
+              backgroundImage: AssetImage("assets/doctor2.png"),
+            ),
+            title: Text(
+              "Dr. Doctor Name",
+              style: TextStyle(
+                fontWeight: FontWeight.w500,
+                fontSize: 25,
+              ),
+            ),
+            subtitle: Text("Profile"),
+          ),
+          const Divider(height: 50),
+          ListTile(
+            onTap: () {},
+            leading: Container(
+              padding: const EdgeInsets.all(10),
+              decoration: BoxDecoration(
+                color: Colors.blue.shade100,
+                shape: BoxShape.circle,
+              ),
+              child: const Icon(
+                CupertinoIcons.person,
+                color: Colors.blue,
+                size: 35,
+              ),
+            ),
+            title: const Text(
+              "Profile",
+              style: TextStyle(
+                fontWeight: FontWeight.w400,
+                fontSize: 20.0,
+              ),
+            ),
+            trailing: Icon(Icons.arrow_forward_ios_rounded),
+          ),
         ],
       ),
     );
