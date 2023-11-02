@@ -12,7 +12,7 @@ class _SettingScreenState extends State<SettingScreen> {
   @override
   Widget build(BuildContext context) {
     return Padding(
-      padding: EdgeInsets.only(top: 50, left: 20, right: 20),
+      padding: const EdgeInsets.only(top: 50, left: 20, right: 20),
       child: Column(
         children: [
           const Text(
@@ -56,12 +56,12 @@ class _SettingScreenState extends State<SettingScreen> {
                 fontSize: 20.0,
               ),
             ),
-            trailing: Icon(Icons.arrow_forward_ios_rounded),
+            trailing: const Icon(Icons.arrow_forward_ios_rounded),
           ),
-          SizedBox(
+          const SizedBox(
             height: 20.0,
           ),
-          ListTile(
+          const ListTile(
             leading: CircleAvatar(
               radius: 30,
               backgroundImage: AssetImage("assets/doctor2.png"),
@@ -85,19 +85,19 @@ class _SettingScreenState extends State<SettingScreen> {
                 shape: BoxShape.circle,
               ),
               child: const Icon(
-                CupertinoIcons.person,
+                Icons.notifications_none_outlined,
                 color: Colors.blue,
                 size: 35,
               ),
             ),
             title: const Text(
-              "Profile",
+              "Notification",
               style: TextStyle(
                 fontWeight: FontWeight.w400,
                 fontSize: 20.0,
               ),
             ),
-            trailing: Icon(Icons.arrow_forward_ios_rounded),
+            trailing: const Icon(Icons.arrow_forward_ios_rounded),
           ),
         ],
       ),
