@@ -253,20 +253,20 @@ class AppointmentScreen extends StatelessWidget {
                     ),
                     ListTile(
                       leading: Container(
-                        padding: EdgeInsets.all(10),
-                        decoration: BoxDecoration(
+                        padding: const EdgeInsets.all(10),
+                        decoration: const BoxDecoration(
                             color: Color(0xFFF0EEFA), shape: BoxShape.circle),
-                        child: Icon(
+                        child: const Icon(
                           Icons.location_on,
                           color: Color(0xFF7165D6),
                           size: 30,
                         ),
                       ),
-                      title: Text(
+                      title: const Text(
                         "Kovai, Medical Center",
                         style: TextStyle(fontWeight: FontWeight.bold),
                       ),
-                      subtitle: Text("address line of the medical center"),
+                      subtitle: const Text("address line of the medical center"),
                     )
                   ],
                 ),
@@ -275,9 +275,9 @@ class AppointmentScreen extends StatelessWidget {
           ),
         ),
         bottomNavigationBar: Container(
-          padding: EdgeInsets.all(15),
+          padding: const EdgeInsets.all(15),
           height: 130,
-          decoration: BoxDecoration(color: Colors.white, boxShadow: [
+          decoration: const BoxDecoration(color: Colors.white, boxShadow: [
             BoxShadow(color: Colors.black12, blurRadius: 4, spreadRadius: 2)
           ]),
           child: Column(
@@ -303,11 +303,11 @@ class AppointmentScreen extends StatelessWidget {
                 onTap: () {},
                 child: Container(
                   width: MediaQuery.of(context).size.width,
-                  padding: EdgeInsets.symmetric(vertical: 18),
+                  padding: const EdgeInsets.symmetric(vertical: 18),
                   decoration: BoxDecoration(
-                      color: Color(0xFF7165D6),
+                      color: const Color(0xFF7165D6),
                       borderRadius: BorderRadius.circular(10)),
-                  child: Center(
+                  child: const Center(
                     child: Text(
                       "Book Appointment",
                       style: TextStyle(
