@@ -162,6 +162,30 @@ class _SettingScreenState extends State<SettingScreen> {
             ),
             trailing: const Icon(Icons.arrow_forward_ios_rounded),
           ),
+          Divider(height: 40),
+          ListTile(
+            onTap: () {},
+            leading: Container(
+              padding: const EdgeInsets.all(10),
+              decoration: BoxDecoration(
+                color: Colors.blueGrey.shade100,
+                shape: BoxShape.circle,
+              ),
+              child: const Icon(
+                Icons.logout_outlined,
+                color: Colors.blueGrey,
+                size: 35,
+              ),
+            ),
+            title: const Text(
+              "Log Out",
+              style: TextStyle(
+                fontWeight: FontWeight.w400,
+                fontSize: 20.0,
+              ),
+            ),
+            trailing: const Icon(Icons.arrow_forward_ios_rounded),
+          ),
         ],
       ),
     );
