@@ -68,15 +68,15 @@ class WelcomeScreen extends StatelessWidget {
                   mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                   children: [
                     Material(
-                      color: Color(0xFF7165D6),
+                      color: const Color(0xFF7165D6),
                       borderRadius: BorderRadius.circular(10),
                       child: InkWell(
                         onTap: () {
                            Navigator.push(context, MaterialPageRoute(builder: (context) => const LoginScreen(),
                            ));
                         },
-                        child: Padding(
-                          padding: const EdgeInsets.symmetric(
+                        child: const Padding(
+                          padding: EdgeInsets.symmetric(
                               vertical: 15, horizontal: 40),
                           child: Text(
                             'Login',
@@ -87,12 +87,12 @@ class WelcomeScreen extends StatelessWidget {
                       ),
                     ),
                       Material(
-                      color: Color(0xFF7165D6),
+                      color: const Color(0xFF7165D6),
                       borderRadius: BorderRadius.circular(10),
                       child: InkWell(
                         onTap: () {},
-                        child: Padding(
-                          padding: const EdgeInsets.symmetric(
+                        child: const Padding(
+                          padding: EdgeInsets.symmetric(
                               vertical: 15, horizontal: 40),
                           child: Text(
                             'Sign Up',
