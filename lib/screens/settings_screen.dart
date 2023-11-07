@@ -163,7 +163,7 @@ class _SettingScreenState extends State<SettingScreen> {
               ),
               trailing: const Icon(Icons.arrow_forward_ios_rounded),
             ),
-            Divider(height: 40),
+            const Divider(height: 40),
             ListTile(
               onTap: () {},
               leading: Container(

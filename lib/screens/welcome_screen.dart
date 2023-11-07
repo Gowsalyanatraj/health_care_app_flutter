@@ -16,17 +16,17 @@ class WelcomeScreen extends StatelessWidget {
           
           width: MediaQuery.of(context).size.width,
           height: MediaQuery.of(context).size.height,
-          padding: EdgeInsets.all(10),
+          padding: const EdgeInsets.all(10),
           child: SafeArea(
             child: Column(
               
               children: [
-                SizedBox(height:15),
+                const SizedBox(height:15),
                 Align(
                     alignment: Alignment.centerRight,
                     child: TextButton(
                         onPressed: () {
-                          Navigator.push(context, MaterialPageRoute(builder: (context) => NavBarRoots(),
+                          Navigator.push(context, MaterialPageRoute(builder: (context) => const NavBarRoots(),
                            ));
                         },
                         child: const Text(
@@ -52,7 +52,7 @@ class WelcomeScreen extends StatelessWidget {
                       wordSpacing: 2),
                 ),
               const  SizedBox(height: 10),
-                Text(
+                const Text(
                   'Appoint Your Doctor',
                   style: TextStyle(
                     color: Colors.black54,
@@ -61,7 +61,7 @@ class WelcomeScreen extends StatelessWidget {
                     letterSpacing: 1,
                   ),
                 ),
-                SizedBox(
+                const SizedBox(
                   height: 10,
                 ),
                 Row(
