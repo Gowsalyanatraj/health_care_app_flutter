@@ -1,6 +1,7 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:health_care_app/screens/home_screen.dart';
+import 'package:health_care_app/screens/schedule_screen.dart';
 
 import '../screens/settings_screen.dart';
 
@@ -19,7 +20,7 @@ class _NavBarRootsState extends State<NavBarRoots> {
     //MESSAGES SCREEN
     Container(),
     //SCHEDULE SCREEN
-    Container(),
+    ScheduleScreen(),
     //SETTING SCREEN
     SettingScreen()
   ];
@@ -44,11 +45,15 @@ class _NavBarRootsState extends State<NavBarRoots> {
               _selectedIndex = index;
             });
           },
-          items:const[
+          items: const [
             BottomNavigationBarItem(icon: Icon(Icons.home), label: "Home"),
-              BottomNavigationBarItem(icon: Icon(CupertinoIcons.chat_bubble_2_fill), label: "Message"),
-                BottomNavigationBarItem(icon: Icon(Icons.calendar_month_outlined), label: "Schedule"),
-                   BottomNavigationBarItem(icon: Icon(Icons.settings), label: "Settings"),
+            BottomNavigationBarItem(
+                icon: Icon(CupertinoIcons.chat_bubble_2_fill),
+                label: "Message"),
+            BottomNavigationBarItem(
+                icon: Icon(Icons.calendar_month_outlined), label: "Schedule"),
+            BottomNavigationBarItem(
+                icon: Icon(Icons.settings), label: "Settings"),
           ],
         ),
       ),
