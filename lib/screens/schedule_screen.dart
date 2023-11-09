@@ -36,8 +36,31 @@ class _ScheduleScreenState extends State<ScheduleScreen> {
             Container(
               padding: EdgeInsets.all(5),
               margin: EdgeInsets.symmetric(horizontal: 10),
-              decoration: BoxDecoration(color: Color(0xfff4f6fa)),
-            )
+              decoration: BoxDecoration(color: Color(0xfff4f6fa),
+              borderRadius: BorderRadius.circular(10) 
+              ),
+              child: Row(
+                mainAxisAlignment: MainAxisAlignment.center,
+                children: [
+                  InkWell(
+                    onTap: (){},
+                    child: Container(
+                      padding: EdgeInsets.symmetric(vertical: 12, horizontal: 25),
+                      decoration: BoxDecoration(
+                        //color:
+                        borderRadius: BorderRadius.circular(10), 
+                      ),
+                      child: const Text("Upcoming",
+                      style: TextStyle(
+                        fontSize: 16,
+                        fontWeight: FontWeight.w500,
+                      ),
+                      ),
+                    ),
+                  )
+                ],
+              ),
+            ),
           ],
         ),
       ),
