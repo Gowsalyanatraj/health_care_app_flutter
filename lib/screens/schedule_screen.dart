@@ -18,12 +18,12 @@ class _ScheduleScreenState extends State<ScheduleScreen> {
   Widget build(BuildContext context) {
     return SingleChildScrollView(
       child: Padding(
-        padding: EdgeInsets.only(top: 40),
+        padding: const EdgeInsets.only(top: 40),
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            Padding(
-              padding: const EdgeInsets.symmetric(horizontal: 15),
+            const Padding(
+              padding: EdgeInsets.symmetric(horizontal: 15),
               child: Text(
                 "Schedule",
                 style: TextStyle(
@@ -32,10 +32,10 @@ class _ScheduleScreenState extends State<ScheduleScreen> {
                 ),
               ),
             ),
-            SizedBox(height: 20),
+            const SizedBox(height: 20),
             Container(
-              padding: EdgeInsets.all(5),
-              margin: EdgeInsets.symmetric(horizontal: 10),
+              padding: const EdgeInsets.all(5),
+              margin: const EdgeInsets.symmetric(horizontal: 10),
               decoration: BoxDecoration(color: Color(0xfff4f6fa),
               borderRadius: BorderRadius.circular(10) 
               ),
