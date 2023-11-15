@@ -36,7 +36,7 @@ class _ScheduleScreenState extends State<ScheduleScreen> {
             Container(
               padding: const EdgeInsets.all(5),
               margin: const EdgeInsets.symmetric(horizontal: 10),
-              decoration: BoxDecoration(color: Color(0xfff4f6fa),
+              decoration: BoxDecoration(color: const Color(0xfff4f6fa),
               borderRadius: BorderRadius.circular(10) 
               ),
               child: Row(
@@ -45,7 +45,7 @@ class _ScheduleScreenState extends State<ScheduleScreen> {
                   InkWell(
                     onTap: (){},
                     child: Container(
-                      padding: EdgeInsets.symmetric(vertical: 12, horizontal: 25),
+                      padding: const EdgeInsets.symmetric(vertical: 12, horizontal: 25),
                       decoration: BoxDecoration(
                         //color:
                         borderRadius: BorderRadius.circular(10), 
