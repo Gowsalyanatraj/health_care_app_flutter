@@ -8,12 +8,12 @@ class ScheduleScreen extends StatefulWidget {
 }
 
 class _ScheduleScreenState extends State<ScheduleScreen> {
-  int _buttonIndex = 0;
+  final int _buttonIndex = 0;
   final _scheduleWidgets = [
     // UpcomingSchedule(),
-    Center(child: Text("Upcoming")),
-     Center(child: Text("Cancelled")),
-      Center(child: Text("Completed")),
+    const Center(child: Text("Upcoming")),
+     const Center(child: Text("Cancelled")),
+      const Center(child: Text("Completed")),
     
   
   ];
@@ -96,7 +96,7 @@ class _ScheduleScreenState extends State<ScheduleScreen> {
                 ],
               ),
             ),
-            SizedBox(height: 30.0),
+            const SizedBox(height: 30.0),
             _scheduleWidgets[_buttonIndex],
           ],
         ),
