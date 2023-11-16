@@ -11,8 +11,11 @@ class _ScheduleScreenState extends State<ScheduleScreen> {
   int _buttonIndex = 0;
   final _scheduleWidgets = [
     // UpcomingSchedule(),
-    Container(),
-    //Upcoming Schedule(),
+    Center(child: Text("Upcoming")),
+     Center(child: Text("Cancelled")),
+      Center(child: Text("Completed")),
+    
+  
   ];
   @override
   Widget build(BuildContext context) {
