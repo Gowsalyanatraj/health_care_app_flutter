@@ -12,10 +12,8 @@ class _ScheduleScreenState extends State<ScheduleScreen> {
   final _scheduleWidgets = [
     // UpcomingSchedule(),
     const Center(child: Text("Upcoming")),
-     const Center(child: Text("Cancelled")),
-      const Center(child: Text("Completed")),
-    
-  
+    const Center(child: Text("Cancelled")),
+    const Center(child: Text("Completed")),
   ];
   @override
   Widget build(BuildContext context) {
@@ -39,57 +37,63 @@ class _ScheduleScreenState extends State<ScheduleScreen> {
             Container(
               padding: const EdgeInsets.all(5),
               margin: const EdgeInsets.symmetric(horizontal: 10),
-              decoration: BoxDecoration(color: const Color(0xfff4f6fa),
-              borderRadius: BorderRadius.circular(10) 
-              ),
+              decoration: BoxDecoration(
+                  color: const Color(0xfff4f6fa),
+                  borderRadius: BorderRadius.circular(10)),
               child: Row(
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
                   InkWell(
-                    onTap: (){},
+                    onTap: () {},
                     child: Container(
-                      padding: const EdgeInsets.symmetric(vertical: 12, horizontal: 25),
+                      padding: const EdgeInsets.symmetric(
+                          vertical: 12, horizontal: 15),
                       decoration: BoxDecoration(
                         //color:
-                        borderRadius: BorderRadius.circular(10), 
+                        borderRadius: BorderRadius.circular(10),
                       ),
-                      child: const Text("Upcoming",
-                      style: TextStyle(
-                        fontSize: 16,
-                        fontWeight: FontWeight.w500,
-                      ),
+                      child: const Text(
+                        "Upcoming",
+                        style: TextStyle(
+                          fontSize: 16,
+                          fontWeight: FontWeight.w500,
+                        ),
                       ),
                     ),
                   ),
-                    InkWell(
-                    onTap: (){},
+                  InkWell(
+                    onTap: () {},
                     child: Container(
-                      padding: const EdgeInsets.symmetric(vertical: 12, horizontal: 25),
+                      padding: const EdgeInsets.symmetric(
+                          vertical: 12, horizontal: 25),
                       decoration: BoxDecoration(
                         //color:
-                        borderRadius: BorderRadius.circular(10), 
+                        borderRadius: BorderRadius.circular(10),
                       ),
-                      child: const Text("Completed",
-                      style: TextStyle(
-                        fontSize: 16,
-                        fontWeight: FontWeight.w500,
-                      ),
+                      child: const Text(
+                        "Completed",
+                        style: TextStyle(
+                          fontSize: 16,
+                          fontWeight: FontWeight.w500,
+                        ),
                       ),
                     ),
                   ),
-                    InkWell(
-                    onTap: (){},
+                  InkWell(
+                    onTap: () {},
                     child: Container(
-                      padding: const EdgeInsets.symmetric(vertical: 12, horizontal: 25),
+                      padding: const EdgeInsets.symmetric(
+                          vertical: 12, horizontal: 25),
                       decoration: BoxDecoration(
                         //color:
-                        borderRadius: BorderRadius.circular(10), 
+                        borderRadius: BorderRadius.circular(10),
                       ),
-                      child: const Text("Cancelled",
-                      style: TextStyle(
-                        fontSize: 16,
-                        fontWeight: FontWeight.w500,
-                      ),
+                      child: const Text(
+                        "Cancelled",
+                        style: TextStyle(
+                          fontSize: 16,
+                          fontWeight: FontWeight.w500,
+                        ),
                       ),
                     ),
                   )
