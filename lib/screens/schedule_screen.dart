@@ -79,24 +79,24 @@ class _ScheduleScreenState extends State<ScheduleScreen> {
                       ),
                     ),
                   ),
-                  InkWell(
-                    onTap: () {},
-                    child: Container(
-                      padding: const EdgeInsets.symmetric(
-                          vertical: 12, horizontal: 25),
-                      decoration: BoxDecoration(
-                        //color:
-                        borderRadius: BorderRadius.circular(10),
-                      ),
-                      child: const Text(
-                        "Cancelled",
-                        style: TextStyle(
-                          fontSize: 16,
-                          fontWeight: FontWeight.w500,
-                        ),
-                      ),
-                    ),
-                  )
+                  // InkWell(
+                  //   onTap: () {},
+                  //   child: Container(
+                  //     padding: const EdgeInsets.symmetric(
+                  //         vertical: 12, horizontal: 25),
+                  //     decoration: BoxDecoration(
+                  //       //color:
+                  //       borderRadius: BorderRadius.circular(10),
+                  //     ),
+                  //     child: const Text(
+                  //       "Cancelled",
+                  //       style: TextStyle(
+                  //         fontSize: 16,
+                  //         fontWeight: FontWeight.w500,
+                  //       ),
+                  //     ),
+                  //   ),
+                  // )
                 ],
               ),
             ),
