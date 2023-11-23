@@ -70,7 +70,7 @@ class _SignUpScreenState extends State<SignUpScreen> {
                           EdgeInsets.symmetric(vertical: 15, horizontal: 40),
                       child: Center(
                         child: Text(
-                          'Create Account',
+                          "Create Account",
                           style: TextStyle(
                               color: Colors.white,
                               fontSize: 22,
