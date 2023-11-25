@@ -114,9 +114,10 @@ class _LoginScreenState extends State<LoginScreen> {
                           ));
                     },
                     child: const Text(
-                      "Create Account",
+                      "Create your account",
                       style: TextStyle(
                         fontWeight: FontWeight.bold,
+                        fontSize: 32,
                         color: Color(0xFF7165D6),
                       ),
                     ))
