@@ -12,8 +12,8 @@ class _ScheduleScreenState extends State<ScheduleScreen> {
   final _scheduleWidgets = [
     // UpcomingSchedule(),
     const Center(child: Text("Upcoming")),
-    const Center(child: Text("Cancelled")),
     const Center(child: Text("Completed")),
+    const Center(child: Text("Cancelled")),
   ];
   @override
   Widget build(BuildContext context) {
@@ -53,7 +53,9 @@ class _ScheduleScreenState extends State<ScheduleScreen> {
                       padding: const EdgeInsets.symmetric(
                           vertical: 12, horizontal: 15),
                       decoration: BoxDecoration(
-                        //color:
+                        color: _buttonIndex == 0
+                            ? Color(0xff7165d6)
+                            : Colors.transparent,
                         borderRadius: BorderRadius.circular(10),
                       ),
                       child: const Text(
@@ -68,14 +70,14 @@ class _ScheduleScreenState extends State<ScheduleScreen> {
                   InkWell(
                     onTap: () {
                       setState(() {
-                        _buttonIndex = 0;
+                        _buttonIndex = 1;
                       });
                     },
                     child: Container(
                       padding: const EdgeInsets.symmetric(
                           vertical: 12, horizontal: 25),
                       decoration: BoxDecoration(
-                        color: _buttonIndex == 0
+                        color: _buttonIndex == 1
                             ? Color(0xff7165d6)
                             : Colors.transparent,
                         borderRadius: BorderRadius.circular(10),
@@ -92,14 +94,16 @@ class _ScheduleScreenState extends State<ScheduleScreen> {
                   InkWell(
                     onTap: () {
                       setState(() {
-                        _buttonIndex = 0;
+                        _buttonIndex = 2;
                       });
                     },
                     child: Container(
                       padding: const EdgeInsets.symmetric(
                           vertical: 12, horizontal: 25),
                       decoration: BoxDecoration(
-                        //color:
+                        color: _buttonIndex == 2
+                            ? Color(0xff7165d6)
+                            : Colors.transparent,
                         borderRadius: BorderRadius.circular(10),
                       ),
                       child: const Text(
