@@ -8,7 +8,7 @@ class ScheduleScreen extends StatefulWidget {
 }
 
 class _ScheduleScreenState extends State<ScheduleScreen> {
-  final int _buttonIndex = 0;
+  int _buttonIndex = 0;
   final _scheduleWidgets = [
     // UpcomingSchedule(),
     const Center(child: Text("Upcoming")),
@@ -44,7 +44,11 @@ class _ScheduleScreenState extends State<ScheduleScreen> {
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
                   InkWell(
-                    onTap: () {},
+                    onTap: () {
+                      setState(() {
+                        _buttonIndex = 0;
+                      });
+                    },
                     child: Container(
                       padding: const EdgeInsets.symmetric(
                           vertical: 12, horizontal: 15),
@@ -62,12 +66,18 @@ class _ScheduleScreenState extends State<ScheduleScreen> {
                     ),
                   ),
                   InkWell(
-                    onTap: () {},
+                    onTap: () {
+                      setState(() {
+                        _buttonIndex = 0;
+                      });
+                    },
                     child: Container(
                       padding: const EdgeInsets.symmetric(
                           vertical: 12, horizontal: 25),
                       decoration: BoxDecoration(
-                        //color:
+                        color: _buttonIndex == 0
+                            ? Color(0xff7165d6)
+                            : Colors.transparent,
                         borderRadius: BorderRadius.circular(10),
                       ),
                       child: const Text(
@@ -80,7 +90,11 @@ class _ScheduleScreenState extends State<ScheduleScreen> {
                     ),
                   ),
                   InkWell(
-                    onTap: () {},
+                    onTap: () {
+                      setState(() {
+                        _buttonIndex = 0;
+                      });
+                    },
                     child: Container(
                       padding: const EdgeInsets.symmetric(
                           vertical: 12, horizontal: 25),
