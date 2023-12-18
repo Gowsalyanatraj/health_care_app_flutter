@@ -45,9 +45,9 @@ class _ScheduleScreenState extends State<ScheduleScreen> {
                 children: [
                   InkWell(
                     onTap: () {
-                      setState(() {
-                        _buttonIndex = 0;
-                      });
+                      // setState(() {
+                      //   _buttonIndex = 0;
+                      // });
                     },
                     child: Container(
                       padding: const EdgeInsets.symmetric(
