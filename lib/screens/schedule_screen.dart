@@ -58,11 +58,12 @@ class _ScheduleScreenState extends State<ScheduleScreen> {
                             : Colors.transparent,
                         borderRadius: BorderRadius.circular(10),
                       ),
-                      child: const Text(
+                      child:  Text(
                         "Upcoming",
                         style: TextStyle(
                           fontSize: 16,
                           fontWeight: FontWeight.w500,
+                           color: _buttonIndex == 0 ?Colors.white :Colors.black38
                         ),
                       ),
                     ),
@@ -82,11 +83,12 @@ class _ScheduleScreenState extends State<ScheduleScreen> {
                             : Colors.transparent,
                         borderRadius: BorderRadius.circular(10),
                       ),
-                      child: const Text(
+                      child:  Text(
                         "Completed",
                         style: TextStyle(
                           fontSize: 16,
                           fontWeight: FontWeight.w500,
+                           color: _buttonIndex == 1 ?Colors.white :Colors.black38
                         ),
                       ),
                     ),
