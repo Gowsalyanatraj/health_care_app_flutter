@@ -59,7 +59,7 @@ class _ScheduleScreenState extends State<ScheduleScreen> {
                         borderRadius: BorderRadius.circular(10),
                       ),
                       child:  Text(
-                        "Upcoming",
+                        "Up Coming",
                         style: TextStyle(
                           fontSize: 16,
                           fontWeight: FontWeight.w500,
