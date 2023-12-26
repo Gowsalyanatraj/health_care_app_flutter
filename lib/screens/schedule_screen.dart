@@ -63,7 +63,7 @@ class _ScheduleScreenState extends State<ScheduleScreen> {
                         style: TextStyle(
                           fontSize: 16,
                           fontWeight: FontWeight.w500,
-                           color: _buttonIndex == 0 ?Colors.white :Colors.black38
+                           color: _buttonIndex == 0 ?Colors.white :Colors.black26
                         ),
                       ),
                     ),
