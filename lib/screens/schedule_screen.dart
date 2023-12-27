@@ -11,8 +11,7 @@ class ScheduleScreen extends StatefulWidget {
 class _ScheduleScreenState extends State<ScheduleScreen> {
   int _buttonIndex = 0;
   final _scheduleWidgets = [
-  
-   UpComingSchedule(),
+    UpComingSchedule(),
     const Center(child: Text("Completed")),
     const Center(child: Text("Cancelled")),
   ];
@@ -37,7 +36,7 @@ class _ScheduleScreenState extends State<ScheduleScreen> {
             const SizedBox(height: 20),
             Container(
               padding: const EdgeInsets.all(5),
-              margin: const EdgeInsets.symmetric(horizontal: 10),
+              margin: const EdgeInsets.symmetric(horizontal: 5),
               decoration: BoxDecoration(
                   color: const Color(0xfff4f6fa),
                   borderRadius: BorderRadius.circular(10)),
@@ -59,13 +58,14 @@ class _ScheduleScreenState extends State<ScheduleScreen> {
                             : Colors.transparent,
                         borderRadius: BorderRadius.circular(10),
                       ),
-                      child:  Text(
+                      child: Text(
                         "Up Coming",
                         style: TextStyle(
-                          fontSize: 16,
-                          fontWeight: FontWeight.w500,
-                           color: _buttonIndex == 0 ?Colors.white :Colors.black26
-                        ),
+                            fontSize: 16,
+                            fontWeight: FontWeight.w500,
+                            color: _buttonIndex == 0
+                                ? Colors.white
+                                : Colors.black26),
                       ),
                     ),
                   ),
@@ -84,13 +84,14 @@ class _ScheduleScreenState extends State<ScheduleScreen> {
                             : Colors.transparent,
                         borderRadius: BorderRadius.circular(10),
                       ),
-                      child:  Text(
+                      child: Text(
                         "Completed",
                         style: TextStyle(
-                          fontSize: 16,
-                          fontWeight: FontWeight.w500,
-                           color: _buttonIndex == 1 ?Colors.white :Colors.black38
-                        ),
+                            fontSize: 16,
+                            fontWeight: FontWeight.w500,
+                            color: _buttonIndex == 1
+                                ? Colors.white
+                                : Colors.black38),
                       ),
                     ),
                   ),
@@ -109,20 +110,21 @@ class _ScheduleScreenState extends State<ScheduleScreen> {
                             : Colors.transparent,
                         borderRadius: BorderRadius.circular(10),
                       ),
-                      child:  Text(
+                      child: Text(
                         "Cancelled",
                         style: TextStyle(
-                          fontSize: 16,
-                          fontWeight: FontWeight.w500,
-                          color: _buttonIndex == 2 ?Colors.white :Colors.black38
-                        ),
+                            fontSize: 16,
+                            fontWeight: FontWeight.w500,
+                            color: _buttonIndex == 2
+                                ? Colors.white
+                                : Colors.black38),
                       ),
                     ),
                   )
                 ],
               ),
             ),
-             const SizedBox(height: 30.0),
+            const SizedBox(height: 30.0),
             _scheduleWidgets[_buttonIndex],
           ],
         ),
