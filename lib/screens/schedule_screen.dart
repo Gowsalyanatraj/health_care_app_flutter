@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:health_care_app/widgets/upcoming_schedule.dart';
 
 class ScheduleScreen extends StatefulWidget {
   const ScheduleScreen({super.key});
@@ -10,8 +11,8 @@ class ScheduleScreen extends StatefulWidget {
 class _ScheduleScreenState extends State<ScheduleScreen> {
   int _buttonIndex = 0;
   final _scheduleWidgets = [
-    // UpcomingSchedule(),
-    const Center(child: Text("Upcoming")),
+  
+   UpComingSchedule(),
     const Center(child: Text("Completed")),
     const Center(child: Text("Cancelled")),
   ];
