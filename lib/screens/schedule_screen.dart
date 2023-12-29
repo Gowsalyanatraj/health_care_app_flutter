@@ -58,15 +58,15 @@ class _ScheduleScreenState extends State<ScheduleScreen> {
                             : Colors.transparent,
                         borderRadius: BorderRadius.circular(10),
                       ),
-                      child: Text(
-                        "Up Coming",
-                        style: TextStyle(
-                            fontSize: 16,
-                            fontWeight: FontWeight.w500,
-                            color: _buttonIndex == 0
-                                ? Colors.white
-                                : Colors.black26),
-                      ),
+                      // child: Text(
+                      //   "Up Coming",
+                      //   style: TextStyle(
+                      //       fontSize: 16,
+                      //       fontWeight: FontWeight.w500,
+                      //       color: _buttonIndex == 0
+                      //           ? Colors.white
+                      //           : Colors.black26),
+                      // ),
                     ),
                   ),
                   InkWell(
