@@ -12,18 +12,32 @@ class UpComingSchedule extends StatelessWidget {
         children: [
           Text("About"),
           SizedBox(height: 15),
-          Container(padding: EdgeInsets.symmetric(vertical: 0.5),
-          decoration: BoxDecoration(
-            color: Colors.white,
-            borderRadius: BorderRadius.circular(10),
-            boxShadow: [
-              BoxShadow(
-                color: Colors.black12,
-                blurRadius: 4,
-                spreadRadius: 2
-              )
-            ]
-          )
+          Container(
+            padding: EdgeInsets.symmetric(vertical: 0.5),
+            decoration: BoxDecoration(
+                color: Colors.white,
+                borderRadius: BorderRadius.circular(10),
+                boxShadow: [
+                  BoxShadow(
+                      color: Colors.black12, blurRadius: 4, spreadRadius: 2)
+                ]),
+            child: SizedBox(
+              width: MediaQuery.of(context).size.width,
+              child: Column(
+                children: [
+                  ListTile(
+                    title: Text(
+                      "Dr. Doctor Name",
+                      style: TextStyle(fontWeight: FontWeight.bold),
+                    ),
+                    subtitle: Text("Therapist"),
+                    trailing: CircleAvatar(
+                      radius: 25,
+                    ),
+                  )
+                ],
+              ),
+            ),
           )
         ],
       ),
